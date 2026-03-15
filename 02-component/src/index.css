@@ -1,0 +1,28 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body basic styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f4f4f4;
+  background-color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Optional: Center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.card{
+  background-color: pink;
+  margin:20px;
+  border-radius: 10px;
+  padding: 20px;
+}
