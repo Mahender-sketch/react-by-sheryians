@@ -12,7 +12,7 @@ if (!fs.existsSync(targetPath)) {
 
 // move all files into subfolder
 fs.readdirSync(distPath).forEach(file => {
-  if (file !== '07-ui-project') {
+  if (file !== '04-card-project') {
     fs.renameSync(
       path.join(distPath, file),
       path.join(targetPath, file)
@@ -22,7 +22,7 @@ fs.readdirSync(distPath).forEach(file => {
 
 ghpages.publish(distPath, {
   branch: 'gh-pages',
-  message: 'Deploy 07-ui-project',
+  message: 'Deploy 04-card-project',
 }, (err) => {
   if (err) console.error(err);
   else console.log('Deployed!');
